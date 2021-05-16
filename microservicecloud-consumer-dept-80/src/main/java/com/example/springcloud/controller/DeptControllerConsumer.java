@@ -16,7 +16,7 @@ import java.util.List;
  * @date 2021-05-14 22:44
  */
 @RestController
-public class DeptController_Consumer {
+public class DeptControllerConsumer {
 
     private static final String REST_URL_PREFIX = "http://localhost:8001";
 

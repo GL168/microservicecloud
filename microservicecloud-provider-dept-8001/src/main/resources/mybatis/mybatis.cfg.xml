@@ -7,6 +7,7 @@
 
     <settings>
         <setting name="cacheEnabled" value="true"/><!-- 二级缓存开启 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/> <!-- 驼峰命名法开启 -->
     </settings>
 
 </configuration>

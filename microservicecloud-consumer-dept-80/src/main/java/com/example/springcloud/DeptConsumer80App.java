@@ -4,14 +4,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- *  主启动类
+ * 80消费者启动类
  * @author GuLin
- * @date 2021-05-13 0:42
+ * @date 2021/5/16
  */
 @SpringBootApplication
-public class DeptProvider8001_App {
+public class DeptConsumer80App {
 
     public static void main(String[] args) {
-        SpringApplication.run(DeptProvider8001_App.class,args);
+        SpringApplication.run(DeptConsumer80App.class, args);
     }
+
 }
