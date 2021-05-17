@@ -12,7 +12,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <junit.version>4.12</junit.version>
-        <log4j.version>1.2.17</log4j.version>
+        <log4j.version>1.2.12</log4j.version>
         <lombok.version>1.16.18</lombok.version>
     </properties>
 
@@ -79,9 +79,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <!-- 以$开头的都可以读取在eureka服务info中展示 -->
                 <configuration>
                     <delimiters>
-                        <delimit>$</delimit>
+                        <!-- 若版本和环境造成动态未显示将delimit改成delimiter -->
+                       <!-- <delimit>$</delimit>-->
+                       <delimiter>$</delimiter>
                     </delimiters>
                 </configuration>
             </plugin>
@@ -93,6 +97,8 @@
         <module>microservicecloud-provider-dept-8001</module>
         <module>microservicecloud-consumer-dept-80</module>
         <module>microservicecloud-eureka-7001</module>
+        <module>microservicecloud-eureka-7002</module>
+        <module>microservicecloud-eureka-7003</module>
     </modules>
 
 
