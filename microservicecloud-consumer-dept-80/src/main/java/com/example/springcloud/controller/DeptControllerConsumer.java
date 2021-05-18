@@ -18,7 +18,9 @@ import java.util.List;
 @RestController
 public class DeptControllerConsumer {
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    //private static final String REST_URL_PREFIX = "http://localhost:8001";
+    /** eureka服务地址 Ribbon和Eureka整合后Consumer可以直接调用服务而不用再关心地址和端口号 **/
+    private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
 
     /**
      * 使用 使用restTemplate访问restful接口非常的简单粗暴无脑。
