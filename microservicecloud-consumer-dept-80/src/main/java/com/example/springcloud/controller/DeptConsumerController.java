@@ -16,7 +16,7 @@ import java.util.List;
  * @date 2021-05-14 22:44
  */
 @RestController
-public class DeptControllerConsumer {
+public class DeptConsumerController {
 
     //private static final String REST_URL_PREFIX = "http://localhost:8001";
     /** eureka服务地址 Ribbon和Eureka整合后Consumer可以直接调用服务而不用再关心地址和端口号 **/
