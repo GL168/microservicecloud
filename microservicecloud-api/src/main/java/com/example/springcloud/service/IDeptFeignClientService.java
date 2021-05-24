@@ -1,6 +1,7 @@
 package com.example.springcloud.service;
 
 import com.example.springcloud.entities.Dept;
+import com.example.springcloud.service.impl.DeptClientServiceFallbackFactory;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,12 +11,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.List;
 
 /**
- * feign Dept server接口
- *
+ *  1.feign Dept server接口
+ *    @FeignClient(name = "MICROSERVICECLOUD-DEPT")
+ *  2.增加服务降级
+ *    @FeignClient(name = "MICROSERVICECLOUD-DEPT",fallbackFactory = DeptClientServiceFallbackFactory.class)
  * @author GuLin
  * @date 2021-05-20 0:03
  */
-@FeignClient(name = "MICROSERVICECLOUD-DEPT")
+@FeignClient(name = "MICROSERVICECLOUD-DEPT",fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface IDeptFeignClientService {
 
     /**

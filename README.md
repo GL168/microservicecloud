@@ -13,8 +13,15 @@
 |microservicecloud-eureka-7001          | eureka-7001 集群服务 | 
 |microservicecloud-eureka-7002          | eureka-7002 集群服务 | 
 |microservicecloud-eureka-7003          | eureka-7003 集群服务  | 
+|microservicecloud-provider-dept-hystrix-8001 | 服务熔断hystrix|
+|microservicecloud-consumer-hystrix-dashboard | 服务监控hystrixDashboard |
+|microservicecloud-zuul-gateway-9527 | 路由网关业务 |
+
 
 ### Eureka本地服务集群host配置
 * 127.0.0.1  eureka7001.com 
 * 127.0.0.1  eureka7002.com 
-* 127.0.0.1  eureka7003.com 
+* 127.0.0.1  eureka7003.com
+
+### Zuul服务网关本地host配置  
+* 127.0.0.1  myzuul.com
